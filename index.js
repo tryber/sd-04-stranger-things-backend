@@ -18,10 +18,9 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-// deploy - hawkins
-// error h10
+const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE || false;
 
-const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE;
+// teste - deploy
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(

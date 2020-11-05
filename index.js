@@ -19,6 +19,7 @@ const strangerThingsService = new StrangerThingsService(
 app.use(cors());
 
 // deploy - hawkins
+// error h10
 
 const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE;
 

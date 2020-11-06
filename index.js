@@ -17,7 +17,7 @@ const strangerThingsService = new StrangerThingsService(
 );
 
 app.use(cors());
-
+// alo
 const UPSIDEDOWM_MODE = JSON.parse(process.env.UPSIDEDOWM_MODE);
 
 app.get('/', (req, res) => {

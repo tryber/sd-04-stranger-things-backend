@@ -4,8 +4,4 @@ apps:
   script: ./index.js
   exec_mode: cluster
   instances: 2
-  hawkins: 
-    upsideDown: "false"
-  upside-down: 
-    upsideDown: "true"
   max_memory_restart: 200M

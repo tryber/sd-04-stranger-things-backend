@@ -19,6 +19,8 @@ const strangerThingsService = new StrangerThingsService(
 app.use(cors());
 
 const hereIsTheUpsideDown = JSON.parse(process.env.UPSIDEDOWN_MODE);
+/* sem o parse, o método search recebe uma string e executa a instrução do if,
+retornando sempre o modo upsideDown para as duas url's */
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(

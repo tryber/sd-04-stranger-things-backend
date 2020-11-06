@@ -7,7 +7,7 @@ const StrangerThingsService = require('./services/StrangerThings');
 require('dotenv').config();
 
 const apiPort = process.env.PORT || 3000;
-const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE === 'true';
+const hereIsTheUpsideDown = process.env.UPSIDEDOWN_MODE === 'false';
 
 const app = express();
 

@@ -1,5 +1,5 @@
 apps:
-  - name: rangel-st-back
+  - name: app
     script: ./index.js
     instances: 2
     watch: false

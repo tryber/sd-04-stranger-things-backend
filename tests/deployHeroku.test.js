@@ -1,7 +1,7 @@
 const frisby = require('frisby');
 const flipout = require('flipout');
-const data = require('../data/dataset/stranger-things-characters.json');
 require('dotenv').config();
+const data = require('../data/dataset/stranger-things-characters.json');
 
 const HAWKINS_URL = `https://${process.env.GITHUB_USER}-bk.herokuapp.com/`
 const UPSIDEDOWN_URL = `https://${process.env.GITHUB_USER}-bd.herokuapp.com/`

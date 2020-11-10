@@ -1,7 +1,7 @@
 apps:
   - name: app
     script: ./index.js
-    exec_mode: cluster
+    exec_mode: cluster #permite escalar nossa aplicação entre as CPUs disponíveis na máquina
     instances: 2
     max_memory_restart: 200M
     

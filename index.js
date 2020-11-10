@@ -7,6 +7,8 @@ const StrangerThingsService = require('./services/StrangerThings');
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
 );
@@ -16,7 +18,9 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 
-const hereIsTheUpsideDown = true;
+const hereIsTheUpsideDown = JSON.parse(process.env.UPSIDEDOWN_MODE);
+/* sem o parse, o método search recebe uma string e executa a instrução do if,
+retornando sempre o modo upsideDown para as duas url's */
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(
@@ -27,6 +31,6 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
-app.listen(3000, () => {
-  console.log('Escutando na porta 3000');
+app.listen(port, () => {
+  console.log(`Escutando na porta ${port}`);
 });

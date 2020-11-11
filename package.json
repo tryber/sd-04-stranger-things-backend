@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "pm2-runtime start ecosystem.config.yml",
-    "test": "jest"
+    "test": "jest",
+    "start:dev": "pm2 start index.js --watch"
   },
   "keywords": [],
   "author": "",

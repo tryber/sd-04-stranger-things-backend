@@ -23,8 +23,8 @@ app.get('/', (req, res) => {
     req.query,
     hereIsTheUpsideDown,
   );
-  res.status(200).json(process.env);
-  // res.status(200).json(characters);
+
+  res.status(200).json(characters);
 });
 
 app.listen(port, () => {

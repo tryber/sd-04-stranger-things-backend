@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start ecosystem.config.yml",
-    "start:dev": "pm2 start index.js --watch --name stranger-things-backend",
+    "start": "pm2-runtime start ecosystem.config.yml",
+    "start:dev": "pm2-runtime start index.js --watch --name stranger-things-backend",
     "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "flipout": "^1.0.0",

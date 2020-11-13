@@ -7,6 +7,7 @@ const StrangerThingsService = require('./services/StrangerThings');
 require('dotenv').config();
 
 const app = express();
+const PORT = 3000;
 
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
@@ -29,5 +30,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('Escutando na porta 3000');
+  console.log(`Escutando na porta ${PORT}`);
 });

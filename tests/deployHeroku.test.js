@@ -19,6 +19,7 @@ describe('Verifica o Deploy no Heroku', () => {
       .expect('status', 200)
       .then((response) => {
         const { body } = response;
+        console.log(JSON.parse(body))
         JSON.parse(body).forEach((character) => {
           expect(data).toContainEqual(character);
         });

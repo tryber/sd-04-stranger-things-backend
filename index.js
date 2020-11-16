@@ -30,6 +30,7 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
+// Deploy
 app.listen(port, () => {
   console.log(`Escutando na porta ${port}`);
 });

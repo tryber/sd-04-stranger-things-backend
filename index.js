@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
 
@@ -8,7 +10,6 @@ const StrangerThingsService = require('./services/StrangerThings');
 const app = express();
 const PORT = process.env.PORT;
 
-// Teste
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
 );

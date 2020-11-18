@@ -8,6 +8,7 @@ const StrangerThingsService = require('./services/StrangerThings');
 const app = express();
 const PORT = process.env.PORT;
 
+// Teste
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
 );

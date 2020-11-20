@@ -3,8 +3,8 @@ const flipout = require('flipout');
 const data = require('../data/dataset/stranger-things-characters.json');
 require('dotenv').config();
 
-const HAWKINS_URL = `https://app-stranger-things.herokuapp.com?batata=300`
-const UPSIDEDOWN_URL = `https://app-stranger-things.herokuapp.com?batata=300`
+const HAWKINS_URL = `https://app-stranger-things.herokuapp.com?batata=${Math.random()}`
+const UPSIDEDOWN_URL = `https://app-stranger-things.herokuapp.com?batata=${Math.random()}`
 
 const flipData = data.map(({ name, origin, status }) => ({
   name: flipout(name),

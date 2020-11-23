@@ -16,7 +16,7 @@ describe('Verifica o Deploy no Heroku', () => {
   it('Será validado que ao fazer uma requisição do tipo GET para o endpoint da API Hawkins serão retornadas as informações corretas.', async () => {
     await frisby
       .get(HAWKINS_URL)
-      .expect('status', 200)
+      .expect('status', 80)
       // .then((response) => {
       //   const { body } = response;
       //   JSON.parse(body).forEach((character) => {

@@ -29,7 +29,7 @@ describe('Verifica o Deploy no Heroku', () => {
     async () => {
       await frisby
         .get(UPSIDEDOWN_URL)
-        .expect('status', 200)
+        .expect('status', 80)
         // .then((response) => {
         //   const { body } = response;
         //   JSON.parse(body).forEach((character) => {

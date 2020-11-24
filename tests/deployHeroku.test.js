@@ -16,25 +16,25 @@ describe('Verifica o Deploy no Heroku', () => {
   it('Será validado que ao fazer uma requisição do tipo GET para o endpoint da API Hawkins serão retornadas as informações corretas.', async () => {
     await frisby
       .get(HAWKINS_URL)
-      .expect('status', 80)
-      // .then((response) => {
-      //   const { body } = response;
-      //   JSON.parse(body).forEach((character) => {
-      //     expect(data).toContainEqual(character);
-      //   });
-      // });
+      .expect('status', 200)
+      .then((response) => {
+        const { body } = response;
+        JSON.parse(body).forEach((character) => {
+          expect(data).toContainEqual(character);
+        });
+      });
   });
 
   it('Será validado que ao fazer uma requisição do tipo GET para o endpoint da API upsideDown serão retornadas as informações corretas',
     async () => {
       await frisby
         .get(UPSIDEDOWN_URL)
-        .expect('status', 80)
-        // .then((response) => {
-        //   const { body } = response;
-        //   JSON.parse(body).forEach((character) => {
-        //     expect(flipData).toContainEqual(character);
-        //   });
-        // });
+        .expect('status', 200)
+        .then((response) => {
+          const { body } = response;
+          JSON.parse(body).forEach((character) => {
+            expect(data).toContainEqual(character);
+          });
+        });
   });
 });

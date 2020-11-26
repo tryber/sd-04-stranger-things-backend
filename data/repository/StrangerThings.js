@@ -22,6 +22,4 @@ class StrangerThingsRepository {
   }
 }
 
-// teste
-
 module.exports = StrangerThingsRepository;

@@ -3,6 +3,7 @@ const cors = require('cors');
 
 require('dotenv/config');
 
+const port = process.env.PORT || 3000;
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
@@ -30,6 +31,6 @@ app.get('/', (req, res) => {
   res.status(200).json(characters);
 });
 
-app.listen(process.env.PORT, () => {
-  console.log(`Escutando na porta ${process.env.PORT}`);
+app.listen(port, () => {
+  console.log(`Escutando na porta ${port}`);
 });

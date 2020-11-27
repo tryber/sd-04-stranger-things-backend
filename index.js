@@ -6,7 +6,6 @@ const cors = require('cors');
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
 const StrangerThingsService = require('./services/StrangerThings');
-// Deploy
 const app = express();
 
 const strangerThingsRepository = new StrangerThingsRepository(

@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 // eslint-disable-next-line import/no-extraneous-dependencies
-require('dotenv/config');
+require('dotenv').config();
 
 const strangerThingsDataset = require('./data/dataset/stranger-things-characters.json');
 const StrangerThingsRepository = require('./data/repository/StrangerThings');

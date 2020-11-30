@@ -8,8 +8,6 @@ const makeFilterFn = (params = {}) => ({ name, status, origin }) => {
   return true;
 };
 
-// teste
-
 class StrangerThingsRepository {
   constructor(dataset) {
     this.dataset = dataset;

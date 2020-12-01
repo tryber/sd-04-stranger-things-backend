@@ -18,7 +18,7 @@ const strangerThingsService = new StrangerThingsService(
 
 app.use(cors());
 // alomundo teste
-const UPSIDEDOWM_MODE = process.env.UPSIDEDOWM_MODE === 'true';
+const UPSIDEDOWM_MODE = (process.env.UPSIDEDOWM_MODE === 'true');
 
 app.get('/', (req, res) => {
   const characters = strangerThingsService.search(

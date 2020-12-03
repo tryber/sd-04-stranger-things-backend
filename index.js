@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
@@ -6,7 +7,7 @@ const strangerThingsDataset = require('./data/dataset/stranger-things-characters
 const StrangerThingsRepository = require('./data/repository/StrangerThings');
 const StrangerThingsService = require('./services/StrangerThings');
 
-const port = process.env.PORT
+const port = process.env.PORT;
 const app = express();
 
 const strangerThingsRepository = new StrangerThingsRepository(

@@ -1,0 +1,10 @@
+apps: 
+  - name: stranger-things
+    script: ./index.js
+    watch: false
+    exec_mode: cluster
+    instances: 2
+    max_memory_restart: '200M'
+  #  env:
+  #    UPSIDEDOWN_MODE: false
+  #    PORT: 3000

@@ -19,6 +19,8 @@ app.use(cors());
 
 const { PORT, UPSIDEDOWN_MODE } = process.env;
 
+//P/ verificar deploy
+
 const hereIsTheUpsideDown = UPSIDEDOWN_MODE;
 
 app.get('/', (req, res) => {

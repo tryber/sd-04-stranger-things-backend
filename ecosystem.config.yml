@@ -1,5 +1,5 @@
 apps:
-  - name: danielPantalena-strangerThings
+  - name: danielPantalena-bk
     script: ./index.js
     exec_mode: cluster
     instances: 2

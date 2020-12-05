@@ -25,6 +25,8 @@ describe('Verifica o Deploy no Heroku', () => {
       });
   });
 
+// teste
+
   it('Será validado que ao fazer uma requisição do tipo GET para o endpoint da API upsideDown serão retornadas as informações corretas',
     async () => {
       await frisby

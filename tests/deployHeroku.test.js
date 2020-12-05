@@ -3,8 +3,8 @@ const flipout = require('flipout');
 const data = require('../data/dataset/stranger-things-characters.json');
 require('dotenv').config();
 
-const HAWKINS_URL = `https://${process.env.GITHUB_USER}-bk.herokuapp.com/`
-const UPSIDEDOWN_URL = `https://${process.env.GITHUB_USER}-bd.herokuapp.com/`
+const HAWKINS_URL = `https://thabatadornelas-bk.herokuapp.com?batata=${Math.random()}`
+const UPSIDEDOWN_URL = `https://thabatadornelas-bd.herokuapp.com?batata=${Math.random()}`
 
 const flipData = data.map(({ name, origin, status }) => ({
   name: flipout(name),
@@ -24,6 +24,8 @@ describe('Verifica o Deploy no Heroku', () => {
         });
       });
   });
+
+// teste
 
   it('Será validado que ao fazer uma requisição do tipo GET para o endpoint da API upsideDown serão retornadas as informações corretas',
     async () => {

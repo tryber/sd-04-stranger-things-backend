@@ -1,5 +1,3 @@
-'use strict';
-
 const makeFilterFn = (params = {}) => ({ name, status, origin }) => {
   if (params.name && !RegExp(params.name, 'gi').test(name)) return false;
 
